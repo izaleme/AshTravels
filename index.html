@@ -65,28 +65,64 @@
     <section div="contato">
         <h2>Orçamento</h2>
         <form method="get" action=""> <!-- Action é o destino do envio de dados (se estiver vazio, vai enviar para a mesma página) -->
-            <label for="nome">Nome</label><br>
-            <input type="text" name="nome"><br><br>
 
-            <label for="email">Email</label><br>
-            <input type="email" required name="email"><br><br> <!-- Required torna o campo obrigatório -->
+            <fieldset>
+                <legend>Dados da Viagem</legend>
 
-            <label for="dtIda">Data de Ida</label><br>
-            <input type="date" name="dtIda"><br><br>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome"><br><br>
+    
+                <label for="email">Email</label><br>
+                <input type="email" required name="email"><br><br> <!-- Required torna o campo obrigatório -->
+    
+                <label for="dtIda">Data de Ida</label><br>
+                <input type="date" name="dtIda"><br><br>
+    
+                <label for="dtRetorno">Data de Retorno</label><br>
+                <input type="date" name="dtRetorno"><br><br>
+    
+                <label for="qtdePessoas">Quantidade de Pessoas</label><br>
+                <input type="number" name="qtdePessoas"><br>
+            </fieldset><br>
 
-            <label for="dtRetorno">Data de Retorno</label><br>
-            <input type="date" name="dtRetorno"><br><br>
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+                <label>
+                    <input type="checkbox" name="passagens" value="Passagens">Compra de Passagens<br> <!-- Value é o valor que vai ser enviado, por ex., ao banco de dados -->
+                </label>
+                <label>
+                    <input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem<br>
+                </label>
+                <label>
+                    <input type="checkbox" name="veiculos" value="Veiculos">Aluguel de Veículos<br>
+                </label>
+            </fieldset><br>
 
-            <label for="qtdePessoas">Quantidade de Pessoas</label><br>
-            <input type="number" name="qtdePessoas"><br><br>
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend> <!-- Os radios devem ter o mesmo name, o que muda é o value -->
+                <label>
+                    <input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito<br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Boleto">Boleto<br>
+                </label>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Pix">Pix<br>
+                </label>
+            </fieldset><br>
 
-            <label for="">Quais serviços deseja contratar?</label><br>
-            <input type="checkbox" name="passagens" value="Passagens">Compra de Passagens<br> <!-- Value é o valor que vai ser enviado, por ex, ao banco de dados -->
-            <input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem<br>
-            <input type="checkbox" name="veiculos" value="Veiculos">Aluguel de Veículos<br><br>
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="À vista">À Vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x" selected>10x com juros</option> <!-- Selected deixa a opção escolhida como selecionada ao abrir a página -->
+                </select>
+            </fieldset><br>
 
-            <label for="comentario">Comentário</label><br>
-            <textarea name="comentario" cols="30" rows="5"></textarea><br><br>
+            <label for="comentario">Comentários</label><br>
+            <textarea name="comentario" cols="40" rows="5"></textarea><br><br>
+
             <button>Salvar</button>
         </form>
     </section>
