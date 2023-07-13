@@ -6,13 +6,21 @@
     <title>Home Page</title>
 </head>
 <body>
+    <nav> <!-- Tag de Navegação -->
+        <ul> <!-- Lista não ordenada (ul) -->
+            <li>Pacotes</li>
+            <li>Taxas</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
     <header>
         <h1>Venha realizar a viagem dos seus sonhos.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor ipsum, egestas a ornare a, condimentum et felis. Integer in ipsum quis diam bibendum dapibus sed vel neque. Nunc vel ipsum ac eros eleifend bibendum sit amet eu tellus. Duis iaculis eros lacus, sit amet tincidunt elit mollis ac. Aliquam viverra viverra vestibulum.</p>
     </header>
-    <section> <!-- Cabeçalho -->
-        
+    <section div="pacotes"> <!-- Cabeçalho -->
         <hr> <!-- Barra horizontal -->
         <h2>Conheça nossos pacotes</h2>
+        <p>Aliquam finibus nec ante a rhoncus. Nam fringilla congue turpis. Suspendisse euismod suscipit lorem. Suspendisse potenti. Duis sagittis porttitor felis, ac scelerisque felis semper sed. Donec nec nisi imperdiet, dignissim massa id, laoreet felis. Curabitur eu arcu vel dui elementum semper a in metus. Suspendisse sit amet efficitur nibh. Aliquam vel lectus et augue ullamcorper placerat. Praesent maximus lacus tempor tempor gravida. Aliquam mattis pretium justo non pellentesque. Nulla ac tincidunt nunc. Vivamus sed massa dolor. Maecenas ac urna nibh. Nulla euismod pretium magna et placerat. Vestibulum dui ipsum, sodales fermentum massa a, molestie tincidunt risus.</p>
         <figure> <!-- Tag semântica para imagens -->
             <img src="img/canada01.png" alt="Paisagem do Canadá" width="500" height="360">
             <figcaption>Canadá</figcaption> <!-- Legenda da imagem -->
@@ -28,6 +36,28 @@
         <source src="videos/brasil.webm" type="video/webm">
         Seu navegador não suporta o formato do vídeo. <a href="https://www.youtube.com/watch?v=zsdrXJNP2zk">Clique aqui para baixar.</a>
     </video>
+    <section div="taxas">
+        <h2>Taxas e Serviços</h2>
+        <p>Veja nossas taxas para serviços:</p>
+        <table border>
+            <tr>
+                <th>Serviços</th> <!-- Deixa o conteúdo em negrito/centralizado -->
+                <th>Valor</th>
+            </tr>
+            <tr> <!-- Linha -->
+                <td>Reserva de Hotel</td> <!-- Coluna -->
+                <td>R$ 600,00</td>
+            </tr>
+            <tr>
+                <td>Compra de Passagens</td>
+                <td>R$ 100,00</td>
+            </tr>
+            <tr>
+                <td>Aluguel de Carros</td>
+                <td>R$900,00</td>
+            </tr>
+        </table>
+    </section>
     <footer> <!-- Rodapé -->
         <p>Desenvolvido por Izabela.</p>
     </footer>
