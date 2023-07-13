@@ -29,7 +29,6 @@
             <img src="img/brasil01.png" alt="Paisagem do Brasil" width="500" height="360">
             <figcaption>Brasil</figcaption>
         </figure>
-        <hr> <!-- Barra horizontal -->
     </section>
     <video controls width="550" height="400"> <!-- controls adiciona os controles de video, como play, volume e maximizar tela -->
         <source src="videos/brasil.mp4" type="video/mp4">
@@ -64,12 +63,28 @@
         </table>
     </section>
     <section div="contato">
-        <h2>Contato</h2>
+        <h2>Orçamento</h2>
         <form method="get" action=""> <!-- Action é o destino do envio de dados (se estiver vazio, vai enviar para a mesma página) -->
             <label for="nome">Nome</label><br>
             <input type="text" name="nome"><br><br>
+
             <label for="email">Email</label><br>
-            <input type="text" name="email"><br><br>
+            <input type="email" required name="email"><br><br> <!-- Required torna o campo obrigatório -->
+
+            <label for="dtIda">Data de Ida</label><br>
+            <input type="date" name="dtIda"><br><br>
+
+            <label for="dtRetorno">Data de Retorno</label><br>
+            <input type="date" name="dtRetorno"><br><br>
+
+            <label for="qtdePessoas">Quantidade de Pessoas</label><br>
+            <input type="number" name="qtdePessoas"><br><br>
+
+            <label for="">Quais serviços deseja contratar?</label><br>
+            <input type="checkbox" name="passagens" value="Passagens">Compra de Passagens<br> <!-- Value é o valor que vai ser enviado, por ex, ao banco de dados -->
+            <input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem<br>
+            <input type="checkbox" name="veiculos" value="Veiculos">Aluguel de Veículos<br><br>
+
             <label for="comentario">Comentário</label><br>
             <textarea name="comentario" cols="30" rows="5"></textarea><br><br>
             <button>Salvar</button>
