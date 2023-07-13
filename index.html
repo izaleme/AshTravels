@@ -4,41 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- O viewport fornece instruções ao navegador sobre como controlar e dimensionar a página -->
     <title>Home Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linka a página de styles -->
 </head>
 <body>
-    <nav> <!-- Tag de Navegação -->
-        <ul> <!-- Lista não ordenada (ul) -->
-            <li>Pacotes</li>
-            <li>Taxas</li>
-            <li>Contato</li>
-        </ul>
-    </nav>
     <header>
+        <nav> <!-- Tag de Navegação -->
+            <ul> <!-- Menu -->
+                <li><a href="">Pacotes</a></li>
+                <li><a href="">Taxas</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
         <h1>Venha realizar a viagem dos seus sonhos.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor ipsum, egestas a ornare a, condimentum et felis. Integer in ipsum quis diam bibendum dapibus sed vel neque. Nunc vel ipsum ac eros eleifend bibendum sit amet eu tellus. Duis iaculis eros lacus, sit amet tincidunt elit mollis ac. Aliquam viverra viverra vestibulum.</p>
     </header>
-    <section div="pacotes"> <!-- Cabeçalho -->
-        <hr> <!-- Barra horizontal -->
+
+    <section id="pacotes"> <!-- Cabeçalho -->
         <h2>Conheça nossos pacotes</h2>
         <p>Aliquam finibus nec ante a rhoncus. Nam fringilla congue turpis. Suspendisse euismod suscipit lorem. Suspendisse potenti. Duis sagittis porttitor felis, ac scelerisque felis semper sed. Donec nec nisi imperdiet, dignissim massa id, laoreet felis. Curabitur eu arcu vel dui elementum semper a in metus. Suspendisse sit amet efficitur nibh. Aliquam vel lectus et augue ullamcorper placerat. Praesent maximus lacus tempor tempor gravida. Aliquam mattis pretium justo non pellentesque. Nulla ac tincidunt nunc. Vivamus sed massa dolor. Maecenas ac urna nibh. Nulla euismod pretium magna et placerat. Vestibulum dui ipsum, sodales fermentum massa a, molestie tincidunt risus.</p>
-        <figure> <!-- Tag semântica para imagens -->
-            <img src="img/canada01.png" alt="Paisagem do Canadá" width="500" height="360">
-            <figcaption>Canadá</figcaption> <!-- Legenda da imagem -->
-        </figure>
-        <figure>
-            <img src="img/brasil01.png" alt="Paisagem do Brasil" width="500" height="360">
-            <figcaption>Brasil</figcaption>
-        </figure>
+        
+        <div class="figures">
+            <figure> <!-- Tag semântica para imagens -->
+                <img src="img/canada01.png" alt="Paisagem do Canadá" width="500" height="360">
+                <figcaption>Canadá</figcaption> <!-- Legenda da imagem -->
+            </figure>
+            <figure>
+                <img src="img/brasil01.png" alt="Paisagem do Brasil" width="500" height="360">
+                <figcaption>Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="img/groelandia01.jpg" alt="Paisagem da Groelândia" width="500" height="360">
+                <figcaption>Groelândia</figcaption>
+            </figure>
+        </div>
+        
+        <div class="videos">
+            <video controls width="550" height="400"> <!-- controls adiciona os controles de video, como play, volume e maximizar tela -->
+                <source src="videos/brasil.mp4" type="video/mp4">
+                <source src="videos/brasil.webm" type="video/webm">
+                Seu navegador não suporta o formato do vídeo. <a href="https://www.youtube.com/watch?v=zsdrXJNP2zk">Clique aqui para baixar.</a>
+            </video>
+        </div>
     </section>
-    <video controls width="550" height="400"> <!-- controls adiciona os controles de video, como play, volume e maximizar tela -->
-        <source src="videos/brasil.mp4" type="video/mp4">
-        <source src="videos/brasil.webm" type="video/webm">
-        Seu navegador não suporta o formato do vídeo. <a href="https://www.youtube.com/watch?v=zsdrXJNP2zk">Clique aqui para baixar.</a>
-    </video>
-    <section div="taxas">
+
+    <section id="taxas">
         <h2>Taxas e Serviços</h2>
         <p>Veja nossas taxas para serviços:</p>
-        <table border>
+        <table>
             <caption>Descrição dos Serviços e respectivos valores</caption> <!-- Titulo da tabela -->
             <thead> <!-- Head da Table-->
                 <tr>
@@ -62,7 +73,8 @@
             </tbody>
         </table>
     </section>
-    <section div="contato">
+
+    <section id="contato">
         <h2>Orçamento</h2>
         <form method="get" action=""> <!-- Action é o destino do envio de dados (se estiver vazio, vai enviar para a mesma página) -->
 
@@ -126,6 +138,7 @@
             <button>Salvar</button>
         </form>
     </section>
+
     <footer> <!-- Rodapé -->
         <p>Desenvolvido por Izabela.</p>
     </footer>
