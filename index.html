@@ -40,23 +40,40 @@
         <h2>Taxas e Serviços</h2>
         <p>Veja nossas taxas para serviços:</p>
         <table border>
-            <tr>
-                <th>Serviços</th> <!-- Deixa o conteúdo em negrito/centralizado -->
-                <th>Valor</th>
-            </tr>
-            <tr> <!-- Linha -->
-                <td>Reserva de Hotel</td> <!-- Coluna -->
-                <td>R$ 600,00</td>
-            </tr>
-            <tr>
-                <td>Compra de Passagens</td>
-                <td>R$ 100,00</td>
-            </tr>
-            <tr>
-                <td>Aluguel de Carros</td>
-                <td>R$900,00</td>
-            </tr>
+            <caption>Descrição dos Serviços e respectivos valores</caption> <!-- Titulo da tabela -->
+            <thead> <!-- Head da Table-->
+                <tr>
+                    <th>Serviços</th> <!-- Deixa o conteúdo em negrito/centralizado -->
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody> <!-- Body da Table -->
+                <tr> <!-- Linha -->
+                    <td>Reserva de Hotel</td> <!-- Coluna -->
+                    <td>R$ 600,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de Passagens</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de Carros</td>
+                    <td>R$900,00</td>
+                </tr>
+            </tbody>
         </table>
+    </section>
+    <section div="contato">
+        <h2>Contato</h2>
+        <form method="get" action=""> <!-- Action é o destino do envio de dados (se estiver vazio, vai enviar para a mesma página) -->
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome"><br><br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email"><br><br>
+            <label for="comentario">Comentário</label><br>
+            <textarea name="comentario" cols="30" rows="5"></textarea><br><br>
+            <button>Salvar</button>
+        </form>
     </section>
     <footer> <!-- Rodapé -->
         <p>Desenvolvido por Izabela.</p>
